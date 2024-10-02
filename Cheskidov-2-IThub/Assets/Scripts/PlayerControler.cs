@@ -42,6 +42,7 @@ public class PlayerControler : MonoBehaviour
     {
         rb.AddForce(new Vector2(0, jumpForece),ForceMode2D.Impulse);
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (LayerMaskUtil.LayerMaskContatinsLayer(groundLayerMask, collision.gameObject.layer))
